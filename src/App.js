@@ -1,24 +1,13 @@
-import logo from './logo.svg';
+import { Container, Typography } from "@mui/material"
 import './App.css';
+import FormSignUp from './components/FormSignUp';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container component="section" maxWidth="sm">
+      <Typography variant="h3" align="center" component="h1">Formulario Registro</Typography>
+      <FormSignUp />
+    </Container>
   );
 }
 
